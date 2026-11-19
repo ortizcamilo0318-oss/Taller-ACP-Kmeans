@@ -13,7 +13,10 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_samples, silhouette_score
 from sklearn.preprocessing import StandardScaler
 
-DATA_PATH = Path(__file__).parent / "data" / "Student_Depression_Dataset.csv"
+_ROOT = Path(__file__).parent
+_CSV = "Student_Depression_Dataset.csv"
+# El CSV se busca en data/ y, si no está, junto a app.py.
+DATA_PATH = next((p for p in (_ROOT / "data" / _CSV, _ROOT / _CSV) if p.exists()), _ROOT / "data" / _CSV)
 SEED = 42
 
 # Variables ordinales: se codifican respetando el orden natural de sus categorías.
