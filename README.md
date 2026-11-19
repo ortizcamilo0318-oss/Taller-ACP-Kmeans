@@ -2,7 +2,7 @@
 
 Taller individual · Machine Learning aplicado a Economía y Finanzas · Pontificia Universidad Javeriana Cali
 
-- **Aplicación desplegada:** _pega aquí el enlace de Streamlit Community Cloud_
+- **Aplicación desplegada:** https://taller-acp-kmeans-7kmsofdqiexzfjk8jgswfp.streamlit.app/
 - **Video de sustentación:** _pega aquí el enlace del video_
 
 ## Contexto y pregunta
